@@ -30,7 +30,7 @@ func (o *OperateResult) String() string {
 }
 
 func (o *OperateResult) ToString() string {
-	return "Language.ErrorCode:" + strconv.Itoa(o.ErrorCode) + "\r\nLanguage.TextDescription:" + o.Message
+	return StringResources.ErrorCode + strconv.Itoa(o.ErrorCode) + "\r\n" + StringResources.TextDescription + o.Message
 }
 
 func (o *OperateResult) CopyErrorFromOther(result *OperateResult) {
